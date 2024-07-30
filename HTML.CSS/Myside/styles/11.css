@@ -1,0 +1,74 @@
+.d 
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.ddiv
+{
+    display:block;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0,0.3);
+    margin:20px;
+    border:none;
+    height:400px;
+    width:250px;
+     
+}
+.ddivdiv 
+{
+    display:grid;
+    grid-template-columns: 35px 1fr ;
+}
+.dprofile 
+{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px; 
+    margin-left: 8px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+.dfont,.dp1,.dp2,.dbutton
+{
+    margin-left: 12px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dimagestyle
+{
+    display:block;
+    height:250px;
+    width:250px;
+    object-fit: cover;
+}
+.dp1
+{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+.dp2
+{
+    margin-top: 0px;
+    color:gray;
+    margin-bottom: 16;
+}
+.dbutton 
+{
+    border-radius:6px;
+    height:46px;
+    width: 140px;
+    color: white;
+    background-color: rgb(48, 91, 230);
+    transition: background-color 0.6s;
+    border:none;
+}
+.dbutton:hover
+{
+    background-color: rgb(25, 77, 221);
+}

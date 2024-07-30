@@ -1,0 +1,65 @@
+body 
+{
+    height:1000px;
+}
+.a 
+{
+    position:fixed;
+    bottom:20px;    
+    right:120px;
+    color:white;
+    background-color:black;   
+}
+.b
+{
+    background-color:green;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    top:0px;
+    width:100px;
+    color:white;
+}
+.c 
+{
+    position:fixed;
+    background-color:black;
+    right:210px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+}
+.d 
+{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color:rgba(0,0,0,0.8)
+}
+.ddiv 
+{
+    background-color:white;
+    position:fixed;
+    top:200px;
+    right:250px;
+    left:250px;
+    border-radius:10px;
+    padding: 20px;;
+}
+.dp1 
+{
+    font-family: arial;
+    font-weight:bold;
+    font-size: 30px;
+}
+.dp2 
+{
+    font-family: arial;
+    font-size: 20px;
+}
+.dbutton 
+{
+    height:25px;
+}

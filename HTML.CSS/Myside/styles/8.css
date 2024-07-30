@@ -1,0 +1,88 @@
+.a,.c,.mail,.button
+{
+    display:block;
+    margin-bottom: 5px;
+}
+.b,.d
+{
+    width:200px;
+    display:inline-block;
+    vertical-align: middle;
+}
+.c
+{
+    width:500px;
+    height:30px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+.d
+{
+    width:100px;
+    height:30px;
+    border-radius: 8px;
+    border-width: 1px;
+    font-size: 16px;
+}
+.mail 
+{
+    margin-top: 8px;
+    width:210px;
+    border-radius: 8px;
+    height:30px;
+    border-width: 1px;;
+}
+.button
+  {
+    color:white;
+    background-color:rgb(71, 105, 216);
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    height:33px;
+    width:216px;
+    transition: background-color 0.2s;
+  }
+  .button:hover
+  {
+    background-color:rgb(13, 85, 156) ;
+  }
+
+  .p,.font,.e
+  {
+    font-style:Arial;
+    
+  }
+  .font
+  {
+   
+    font-size:40px;
+  }
+  .e
+  {
+    display:block;
+    color:white;
+    background-color: rgb(240, 240, 240);
+    height:50px;
+    border:none;
+    width:400px;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+  .ebutton,.ebutton2
+  {
+    font-size: 16px;
+    width:150px;
+    height:50px;
+    margin-top: 20px;;
+    background-color:black;
+    color:white;
+
+  }
+  .ebutton2
+  {
+    border:none;
+    color:black;
+    background-color:rgb(240, 240, 240);
+  }

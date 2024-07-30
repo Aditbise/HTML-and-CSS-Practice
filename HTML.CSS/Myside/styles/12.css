@@ -1,0 +1,140 @@
+.a 
+{
+    display:flex;
+    flex-direction:row;
+}
+.b 
+{ 
+    margin-top: 10px;
+    display:flex;
+    flex-direction:row;
+}
+.c 
+{ 
+    justify-content:space-between;
+    margin-top: 10px;
+    display:flex;
+    flex-direction:row;
+}
+.d 
+{
+    height:70px;
+    margin-top: 10px;;
+    display:flex;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.e 
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 8px;;
+}
+.edisplay 
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: centre;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.enotification 
+{
+    color:white;
+    background-color:rgb(33, 121, 223);
+    width:30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size:14px;
+    font-weight: bold;
+    
+}
+.f 
+{
+    background-color: rgb(119, 76, 158);
+    height:50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.fbox 
+{
+    flex:1;
+    border:none;
+    border-radius: 20px;
+    height: 26px;;
+    width: 100%;
+    min-width: 300px;
+    padding-left: 20px;
+}
+.fbutton 
+{
+    width:150px;
+    border: solid;
+    border-color: white;
+    color:white;
+    border-width: 1px;
+    background-color: rgb(119, 76, 158);
+    height:30px;
+    width:100px;
+    margin-right: 10px;
+}
+.g
+{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.gimage 
+{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.gmiddlesection 
+{
+    padding-right: 100px;
+}
+.gp1 
+{   
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom:0px;
+    margin-top:4px;
+}
+.gp2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+.gbutton 
+{
+    background-color: rgb(52, 97, 219);
+    color:white;
+    font-weight: bold;
+    border:none;
+    width:90px;
+    height:35px;
+    border-radius:6px;
+}

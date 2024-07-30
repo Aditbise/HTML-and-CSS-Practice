@@ -1,0 +1,109 @@
+.imagestyle1
+{
+  width:200px;
+  height:200PX;
+  object-fit:cover;
+  border-radius:20px;
+}
+.imagestyle2
+{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+.imagestyle3
+{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.box1
+{
+    border-style:solid;
+    width:200px;
+    height:40px;
+    object-fit: cover;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+    color:rgb(105, 111, 119);
+}
+.box2
+{
+    border:none;
+    width:550px;
+    height:40px;
+    border-radius:25px;
+    color:rgb(105, 111, 119);
+    font-size:18px;
+    box-shadow: 0px 0px 20px rgb(105, 111, 119);
+}
+.email
+{
+    font-family: arial;
+    color:rgb(105, 111, 119);
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.box3
+{
+    border:solid;
+    width:350px;
+    height:30px;
+    border-radius:5px;
+    border-width: 2px;
+    font-size: 18px;
+}
+.join
+{
+    font-family: arial;
+    color: rgb(105, 111, 119);
+    font-size: 15px;
+}
+.b1,.join2
+{
+    background-color:rgb(4, 132, 206);
+    color:white;
+    width:350px;
+    height:50px;
+    border:none;
+    border-radius: 30px;
+    transition: background-color 0.2s;
+}
+.b1:hover
+{
+  background-color:rgb(13, 85, 156) ;
+}
+.imagestyle4
+{
+    vertical-align:middle ;
+    border:none;
+    border-radius: 50px;
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+.wh
+{
+    
+    font-family: arial;
+    color:rgb(105, 111, 119);
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    border:none;
+    border-radius: 20px;
+}
+.join2
+{
+    width:100px;
+    height:40px;
+    font-weight: bold;
+}
+.join2:hover
+{
+  background-color:rgb(13, 85, 156) ;
+}

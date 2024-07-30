@@ -1,0 +1,112 @@
+
+.a
+{
+    display:block;
+}
+.adisplay
+{
+    vertical-align: middle;
+    display:inline-block;
+    
+}
+.a1display
+{
+    vertical-align: middle;
+    display:inline-block;
+    width:350px;
+}
+.ap1display,.ap2display,.ap3display
+{
+    margin-right: 200px;
+}
+.aimagestyle 
+{
+
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.ap1
+{
+    
+    margin-top: 16px;
+    margin:4px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: arial; 
+}
+.ap2
+{
+    margin:4px;
+    color:gray;
+    font-weight: bold;
+    font-family: roboto,arial;
+}
+.abutton 
+{
+    background-color: rgb(85, 143, 219);
+    border:none;
+    color:white;
+    width:100px;
+    height:40px;
+    border-radius:8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.c 
+{
+    display:block
+}
+.cthumbnail
+{
+    width:280px;
+    display: block;
+    margin-bottom:0px;
+    border-radius: 8px;
+}
+.c1,.c2
+{
+    display:inline-block;
+}
+.c2
+{
+    vertical-align:top;
+}
+.chead 
+{
+    margin-top: 4px;
+    font-size: 22px;
+    font-family: arial;
+    font-weight: bold;
+    width:300px;
+
+}
+.cchannal 
+{
+    font-family: roboto;
+    font-weight: bold;
+    color:rgb(96,96,96);
+    margin-bottom: 8px;
+}
+.cstats 
+{
+    font-family: roboto;
+    font-weight: bold;
+    color:rgb(96,96,96);
+    margin:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
