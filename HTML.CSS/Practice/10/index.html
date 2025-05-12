@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="return fun()">
+        <input type="text" placeholder="Name" id="name"><br><br>
+        <input type="password" placeholder="Password" id="password"><br><br>
+        <input type="text" placeholder="Email" id="email"><br><br>
+        <button type="submit">Register</button>
+    </form>
+    <p id="message">Result</p>
+
+    <script>
+        function fun() {
+            const name = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+            const email = document.getElementById("email").value;
+            const msg = document.getElementById("message");
+
+            const names = /^[A-Za-z]{6,}$/;
+            const emails = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!names.test(name)) {
+                msg.textContent = "Name should contain only alphabets and be at least 6 characters long.";
+                alert("Name should contain only alphabets and be at least 6 characters long.");
+                return false;
+            }
+
+            if (password.length < 6) {
+                msg.textContent = "Password must be at most 6 characters long.";
+                return false;
+            }
+
+            if (!emails.test(email)) {
+                msg.textContent = "Please enter a valid email address.";
+                return false;
+            }
+
+            msg.textContent = "Registration Successful!";
+            return false; // Prevent actual form submission for demo purposes
+        }
+    </script>
+</body>
+</html>

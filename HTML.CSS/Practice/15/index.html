@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>11
+    </title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        h2, .form-section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Maruti Car Ownership Survey</h2>
+
+    <div class="form-section">
+        <label>City: 
+            <select id="cityselect">
+                <option value="">Select City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </label>
+
+        <label>Car Model: 
+            <select id="carselect">
+                <option value="">Select Car</option>
+                <option value="Maruti-K10">Maruti-K10</option>
+                <option value="Zen-Astelo">Zen-Astelo</option>
+                <option value="WagonR">WagonR</option>
+                <option value="Maruti-SX4">Maruti-SX4</option>
+            </select>
+        </label>
+
+        <label>Number Owned: 
+            <input type="number" id="count" min="0" max="100">
+        </label>
+
+        <button onclick="update()">Submit</button>
+    </div>
+
+    <table id="tbl">
+        <tr>
+            <th>City/Cars</th>
+            <th>Maruti-K10</th>
+            <th>Zen-Astelo</th>
+            <th>WagonR</th>
+            <th>Maruti-SX4</th>
+        </tr>
+        <tr><td>Delhi</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Mumbai</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Chennai</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Kolkata</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <script>
+        function update() {
+            const cars = {"Maruti-K10": 1,"Zen-Astelo": 2,"WagonR": 3,"Maruti-SX4": 4 };
+            const cities = {"Delhi": 1,"Mumbai": 2,"Channai": 3,"Kolkata": 4 };
+
+            const city = document.getElementById("cityselect").value;
+            const car = document.getElementById("carselect").value;
+           
+            const count = document.getElementById("count").value;
+
+            const cityrow=cityindex[city];
+            const carcolumn=carindex[car];
+            const table = document.getElementById("tbl");
+                    
+            table.rows[document].cells[car].innerHTML=count;
+
+
+            document.getElementById("citySelect").value = "";
+            document.getElementById("carSelect").value = "";
+            document.getElementById("carCount").value = "";
+    }
+    </script>
+
+</body>
+</html>

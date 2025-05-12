@@ -1,0 +1,45 @@
+Write a script that inputs a telephone number as a string in the form (555)555-555. The script should use strings method split to extract
+the area code as token and the last four digits of the phone numbers as a token. Display the area code in one test field and the seven
+digit phone number in another text field
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+</head>
+<body>
+    <center>
+        <h2></h2>
+    
+            <label>Enter Number : 
+                <input placeholder="    (555)555-555" type="number" id="nocheck" min="0" max="100" style="height: 26px; width:120px;">
+            </label><br><br>
+    
+            <button onclick="update()">Submit</button><br><br>
+
+            <label>Area code:
+            </label>
+            <Textarea placeholder="    hi1!!!      " style="height: 26px; width:120px;"></Textarea><br><br>
+            <label>Last code:
+            </label>
+            <Textarea placeholder="     hi2!!!      " style="height: 26px; width:120px;"></Textarea><br><br>
+
+    </center>
+  
+
+    <script>
+        function update(){
+        
+            const count = document.getElementById("nocheck").value;
+            let split1=count.split[')'];
+            let split2=count.split['('];
+            let split3=split1.[1];
+
+            document.getElementById("")
+
+        }
+    </script>
+
+</body>
+</html>

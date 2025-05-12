@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Customer Profile</title>
+</head>
+<body>
+
+<h2>Hotel Customer Profile Form</h2>
+
+<form>
+    <fieldset>
+        <legend>Customer Details</legend>
+        <label>Name: <input type="text" name="name"></label>
+        <label>Address: <input type="text" name="address"></label>
+        <label>Age: <input type="number" name="age"></label>
+        <label>Gender: 
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Booking Details</legend>
+        <label>Room Type: 
+            <select name="room">
+                <option value="AC">A/C</option>
+                <option value="Non-AC">Non-A/C</option>
+                <option value="Deluxe">Deluxe</option>
+            </select>
+        </label>
+        <label>Type of Payment: 
+            <select name="payment">
+                <option value="Cash">Cash</option>
+                <option value="Card">Credit/Debit Card</option>
+                <option value="Coupons">Coupons</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

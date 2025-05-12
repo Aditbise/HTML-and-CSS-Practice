@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="press()">Enter</button>
+    <textarea id="text"></textarea>
+    <p id="output"> </p>
+    <script>
+        prompt("Enter your name");
+        function press(){
+            let username=document.getElementById("name").value;
+            if(username===""){
+                document.getElementById("output").innerHTML="Please Enter Your Name";
+                alert("Please Enter Something");
+                return;
+            }
+            confirm("Are you sure");
+            let greeting="Hello "+username+" Hi!";
+            document.getElementById("output").innerHTML="";
+            document.getElementById("text").innerHTML=greeting;
+
+        }
+    </script> 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Example</title>
+</head>
+<body>
+
+    <h2>User Information</h2>
+    <button onclick="loadXML()">Load XML Data</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+
+    <script>
+        function loadXML() {
+            let xmlData = ` 
+                <users>
+                    <user>
+                        <name>John Doe</name>
+                        <age>25</age>
+                        <city>New York</city>
+                    </user>
+                    <user>
+                        <name>Jane Smith</name>
+                        <age>30</age>
+                        <city>Los Angeles</city>
+                    </user>
+                </users>`;
+
+            let parser = new DOMParser();
+            let xmlDoc = parser.parseFromString(xmlData, "text/xml");
+
+            let users = xmlDoc.getElementsByTagName("user");
+            let tableBody = document.getElementById("userTable");
+
+            tableBody.innerHTML = ""; // Clear previous data
+
+            for (let i = 0; i < users.length; i++) {
+                let name = users[i].getElementsByTagName("name")[0].textContent;
+                let age = users[i].getElementsByTagName("age")[0].textContent;
+                let city = users[i].getElementsByTagName("city")[0].textContent;
+
+                let row = `<tr>
+                            <td>${name}</td>
+                            <td>${age}</td>
+                            <td>${city}</td>
+                          </tr>`;
+                tableBody.innerHTML += row;
+            }
+        }
+    </script>
+
+</body>
+</html>

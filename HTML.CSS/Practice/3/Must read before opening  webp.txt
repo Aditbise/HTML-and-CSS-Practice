@@ -1,0 +1,3 @@
+Hello sir!
+3.h.html is the home page and leading other pages are 3....html styles i have separated styles folder and script but was not able to separate 
+images because it was not in my head that we have to separate it rest all is good! hope you find assignment nice! :D

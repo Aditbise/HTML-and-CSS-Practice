@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+<center>
+    <h1 id="msg">Form</h1>
+</center>
+<script>
+    const message = ["1", "2", "3"];
+    let i = 0;
+
+    function function1() {
+        i = (i + 1) % message.length;
+        document.getElementById("msg").textContent = message[i];
+    }
+    document.getElementById("msg").textContent = message[i];
+    setInterval(function1, 60000);
+</script>
+</body>
+</html>

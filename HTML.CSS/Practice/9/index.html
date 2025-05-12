@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validator</title>
+</head>
+<body>
+    <h1>Please enter your card key for card validation</h1>
+    <input type="number" placeholder="Card number" id="number">
+    <button onclick="press()">Validate</button>
+    <input type="text" placeholder="Result" id="output">
+
+    <script>
+        function press() {
+            let number = document.getElementById("number").value.trim();
+
+            let mc = /^5[1-5]/;       
+            let vc = /^4/;           
+            let ae = /^3[47]/;        
+
+            if (number === "") {
+                alert("Please Enter Something");
+                document.getElementById("output").value = "Please Enter Your Card Number";
+                return;
+            }
+
+            if (mc.test(number) && number.length === 16) {
+                document.getElementById("output").value = "It is a Master Card";
+            } else if (vc.test(number) && (number.length === 13 || number.length === 16)) {
+                document.getElementById("output").value = "It is a Visa Card";
+            } else if (ae.test(number) && number.length === 15) {
+                document.getElementById("output").value = "It is an American Express";
+            } else {
+                document.getElementById("output").value = "Card not recognized";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
